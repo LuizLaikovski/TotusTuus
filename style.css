@@ -857,6 +857,15 @@
 
         /* Media Queries */
         @media (max-width: 1200px) {
+            .navbar h1 {
+                display: none;
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: right;
+            }
+
             .hero-content h1 {
                 font-size: 3rem;
             }
