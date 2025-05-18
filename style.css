@@ -12,6 +12,14 @@
             --text: #333333;
         }
 
+        body::-webkit-scrollbar-track {
+            background: #0077b6;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background: #023e8a;
+        }
+
         /* Reset e estilos base */
         * {
             margin: 0;
