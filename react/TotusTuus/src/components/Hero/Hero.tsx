@@ -85,7 +85,7 @@ function Hero() {
                 <div className="particles" id="particles"></div>
                 <div className="container">
                     <div className="hero-content" data-aos="fade-up">
-                        <h1>Totus Tuus TESTEEEEEE</h1>
+                        <h1>Totus Tuus Marie</h1>
                         <p>Acompanhe a contagem para a nossa grande aventura no Beto Carrero World!</p>
 
                         <div className="countdown">
