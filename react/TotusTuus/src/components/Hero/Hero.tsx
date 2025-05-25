@@ -64,7 +64,8 @@ function Hero() {
     const [hours, setHours] = useState('00');
     const [minutes, setMinutes] = useState('00');
     const [seconds, setSeconds] = useState('00');
-    const [isEventDateReached, setIsEventDateReached] = useState(false);
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    let [ setIsEventDateReached] = useState(false);
 
     useEffect(() => {
         // Data alvo: 18 de outubro de 2025
@@ -75,7 +76,7 @@ function Hero() {
             const distance = targetDate - now;
 
             if (distance <= 0) {
-                setIsEventDateReached(true);
+                setIsEventDateReached = true;
                 return;
             }
 

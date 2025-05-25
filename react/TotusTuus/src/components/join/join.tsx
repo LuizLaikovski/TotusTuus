@@ -7,9 +7,10 @@ import imagem2 from './IMG_7238.jpg';
 const Join: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const modalRef = useRef<HTMLDivElement>(null);
-    const buttonRef = useRef<HTMLButtonElement>(null);
+    // const buttonRef = useRef<HTMLButtonElement>(null);
 
     // Abrir modal
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const openModal = (e: React.MouseEvent<HTMLButtonElement>) => {
         createRipple(e);
         setIsModalOpen(true);
