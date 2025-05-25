@@ -376,8 +376,11 @@
                 font-size: 1.8rem;
             }
 
-            .reveal-detail {
-                gap: 10px;
+            .reveal-details {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
             }
 
             .reveal-detail span {
