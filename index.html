@@ -10,6 +10,16 @@
     <link rel="shortcut icon" href="images/ICONTOTUS.ico" type="image/x-icon">
 </head>
 <body>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+
+
+
     <!-- Preloader -->
     <div class="preloader">
         <div class="loader"></div>
@@ -103,16 +113,6 @@
                                 <p>Estudos bíblicos e formação na fé católica.</p>
                             </div>
                         </div>
-                        
-                        <!-- <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
-                            <div class="feature-icon">
-                                <i class="fas fa-hands-helping"></i>
-                            </div>
-                            <div class="feature-text">
-                                <h3>Caridade</h3>
-                                <p>Ações sociais e trabalhos voluntários.</p>
-                            </div>
-                        </div> -->
                         
                         <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
                             <div class="feature-icon">
@@ -234,7 +234,9 @@
                                 <p>Disposição para viver a fé com alegria</p>
                             </div>
                         </div>
+                        <button id="saibaMaisBtn" class="btn btn-primary"><i class="fas fa-calendar-alt"></i>Veja sobre o Próximo encontro...</button>
                     </div>
+
                     
                     <a href="https://chat.whatsapp.com/FQNHOTFcpTh9pGIxXaoQco" class="btn btn-primary" style="margin-top: 30px;">Entre em Contato</a>
                 </div>
@@ -246,6 +248,7 @@
         </div>
     </section>
 
+    <!-- MODAL DO BETO CARREIRO -->
     <!-- Reveal Section (Hidden until countdown ends) -->
     <div id="reveal-section" class="reveal-section">
         <div id="confetti-container" class="confetti-container"></div>
@@ -281,6 +284,54 @@
             </div>
             
             <a href="https://forms.gle/H9rbmpB7RfDqihBB9" class="btn btn-primary">Quero Participar!</a>
+        </div>
+    </div>
+
+
+    
+    <!-- MODAL DE NOVOS ENCONTROS -->
+    <div id="eventoModal" class="modal">
+        <div class="modal-content">
+            <button class="close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="modal-header"></div>
+            
+            <div class="modal-body">
+                <div class="event-image floating">
+                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Tech Conference">
+                </div>
+                
+                <div class="event-details">
+                    <div class="detail-card animate-delay-1">
+                        <div class="detail-icon">
+                            <i class="fas fa-calendar-day"></i>
+                        </div>
+                        <h3 class="detail-title">Data</h3>
+                        <p class="detail-value">21 de Junho de 2025</p>
+                    </div>
+                    
+                    <div class="detail-card animate-delay-2">
+                        <div class="detail-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="detail-title">Local</h3>
+                        <p class="detail-value">Paróquia São José Operário</p>
+                    </div>
+                </div>
+                
+                <div class="event-description">
+                    <p>Junte-se a nós para a edição 2024 da Tech Conference, onde reunimos os maiores especialistas em tecnologia, inovação e negócios digitais. Este ano, focaremos em:</p>
+                    <ul>
+                        <li>Inteligência Artificial e Machine Learning</li>
+                        <li>Desenvolvimento Web Moderno</li>
+                        <li>Blockchain e Web3</li>
+                        <li>UX/UI Design e Product Management</li>
+                    </ul>
+                    <p style="margin-top: 10px;">Com mais de 50 palestrantes internacionais, workshops práticos e oportunidades de networking.</p>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -325,11 +376,5 @@
     <button id="back-to-top" class="back-to-top">
         <i class="fas fa-arrow-up"></i>
     </button>
-
-    <!-- AOS Animation Library -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    
-    <!-- JavaScript -->
-    <script src="/ts/script.js"></script>
 </body>
 </html>

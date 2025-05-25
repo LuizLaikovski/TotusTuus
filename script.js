@@ -362,3 +362,77 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+            // Modal elements
+            const modal = document.getElementById('eventoModal');
+            const openBtn = document.getElementById('saibaMaisBtn');
+            const closeBtn = document.querySelector('.close-btn');
+            
+            // Open modal with animation
+            openBtn.addEventListener('click', function(e) {
+                // Ripple effect
+                createRipple(e);
+                
+                // Open modal
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+            
+            // Close modal
+            closeBtn.addEventListener('click', closeModal);
+            
+            // Close when clicking outside
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // Close with ESC key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('active')) {
+                    closeModal();
+                }
+            });
+            
+            // Close modal function
+            function closeModal() {
+                modal.classList.remove('active');
+                setTimeout(() => {
+                    document.body.style.overflow = 'auto';
+                }, 300);
+            }
+            
+            // Ripple effect function
+            function createRipple(event) {
+                const btn = event.currentTarget;
+                const circle = document.createElement('span');
+                const diameter = Math.max(btn.clientWidth, btn.clientHeight);
+                const radius = diameter / 2;
+                
+                circle.style.width = circle.style.height = `${diameter}px`;
+                circle.style.left = `${event.clientX - btn.getBoundingClientRect().left - radius}px`;
+                circle.style.top = `${event.clientY - btn.getBoundingClientRect().top - radius}px`;
+                circle.classList.add('ripple');
+                
+                const ripple = btn.getElementsByClassName('ripple')[0];
+                if (ripple) {
+                    ripple.remove();
+                }
+                
+                btn.appendChild(circle);
+            }
+            
+            // Add hover effects to all buttons
+            const buttons = document.querySelectorAll('.btn');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'translateY(-2px)';
+                });
+                
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = 'translateY(0)';
+                });
+            });
+        });
