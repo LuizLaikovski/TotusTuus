@@ -116,7 +116,7 @@ const Join: React.FC = () => {
                                 </div>
                             </div>
                             
-                            <button ref={buttonRef} id="saibaMaisBtn" className="btn btn-primary" onClick={openModal}><FontAwesomeIcon icon={faCalendarDays} /> Veja sobre o Próximo encontro...</button>
+                            {/* <button ref={buttonRef} id="saibaMaisBtn" className="btn btn-primary" onClick={openModal}><FontAwesomeIcon icon={faCalendarDays} /> Veja sobre o Próximo encontro...</button> */}
                         </div>
                         
                         <a href="https://chat.whatsapp.com/FQNHOTFcpTh9pGIxXaoQco" className="btn btn-primary" style={{marginTop: '30px'}}>Entre em Contato</a>
