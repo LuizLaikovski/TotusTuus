@@ -177,3 +177,75 @@
         .event-description li {
             margin-bottom: 5px;
         }
+
+        @media (max-width: 640px) {
+            .modal-header {
+                padding: 20px 15px;
+            }
+            
+            .modal-title {
+                font-size: 20px;
+            }
+            
+            .modal-subtitle {
+                font-size: 13px;
+            }
+            
+            .modal-body {
+                padding: 15px;
+                gap: 15px;
+            }
+            
+            .event-details {
+                grid-template-columns: 1fr;
+            }
+            
+            .detail-card {
+                padding: 12px;
+            }
+            
+            .event-description {
+                padding: 15px;
+                font-size: 13px;
+            }
+            
+            .modal-footer {
+                padding: 12px 15px;
+                justify-content: center;
+            }
+
+            .btn-contact {
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .reveal-content {
+                padding: 30px 20px;
+            }
+
+            .reveal-content h2 {
+                font-size: 1.8rem;
+            }
+
+            .reveal-content h3 {
+                font-size: 1.5rem;
+            }
+
+            .modal-content {
+                max-height: 95vh;
+            }
+            
+            .modal-title {
+                font-size: 18px;
+            }
+            .detail-icon {
+                width: 32px;
+                height: 32px;
+                font-size: 13px;
+            }
+            
+            .event-image {
+                aspect-ratio: 16/10;
+            }
+        }

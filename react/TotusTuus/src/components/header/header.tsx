@@ -49,9 +49,9 @@ function Header() {
                         <a href="#gallery">Galeria</a>
                         <a href="#join">Entre para o Grupo</a>
                     </div>
-                    {/* <button id="hamburger" className="hamburger">
+                    <button id="hamburger" className="hamburger">
                         <i className="fas fa-bars"></i>
-                    </button> */}
+                    </button>
                 </nav>
             </div>
             </header>

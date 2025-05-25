@@ -83,3 +83,38 @@
         .hamburger:hover {
             color: var(--primary);
         }
+
+        @media (max-width: 1200px) {
+            .navbar h1 {
+                display: none;
+            }
+
+            .navbar {
+                display: flex;
+                justify-content: right;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                background-color: var(--white);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                transform: translateY(-150%);
+                transition: transform 0.3s ease;
+                z-index: 999;
+            }
+
+            .nav-links.active {
+                transform: translateY(0);
+            }
+
+            .hamburger {
+                display: block;
+            }
+        }

@@ -140,3 +140,24 @@
             transform: translateY(-5px);
             box-shadow: 0 8px 20px rgba(0, 119, 182, 0.5);
         }
+
+        @media (max-width: 992px) {
+            .footer-content {
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+
+            .footer-info {
+                grid-column: span 2;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-info {
+                grid-column: span 1;
+            }
+        }

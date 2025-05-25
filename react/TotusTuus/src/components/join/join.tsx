@@ -123,7 +123,7 @@ const Join: React.FC = () => {
                                 </button>
                             </div>
                             
-                            <a href="https://chat.whatsapp.com/FQNHOTFcpTh9pGIxXaoQco" className="btn btn-primary" style={{marginTop: '30px'}}>Entre em Contato</a>
+                            <a href="https://chat.whatsapp.com/FQNHOTFcpTh9pGIxXaoQco" className="btn btn-primary btn-contact" style={{marginTop: '30px'}}>Entre em Contato</a>
                         </div>
                         
                         <div className="about-image" data-aos="fade-left">
