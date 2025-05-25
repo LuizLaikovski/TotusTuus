@@ -116,6 +116,11 @@
             transform: translateY(-3px);
         }
 
+        .btn-disable {
+            cursor: not-allowed;
+            border: 1px black solid;
+        }
+
         .section-title {
             text-align: center;
             margin-bottom: 60px;

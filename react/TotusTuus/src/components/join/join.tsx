@@ -115,8 +115,9 @@ const Join: React.FC = () => {
                                 <button 
                                     ref={buttonRef}
                                     id="saibaMaisBtn" 
-                                    className="btn btn-primary" 
+                                    className="btn btn-disable" 
                                     onClick={openModal}
+                                    disabled
                                 >
                                     <FontAwesomeIcon icon={faCalendarDays} /> Veja sobre o Próximo encontro...
                                 </button>
