@@ -351,7 +351,13 @@
             }
 
             .reveal-details {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+                overflow: hidden;
+            }
+
+            .btn {
+                width: 100%;
+                text-align: center;
             }
         }
 
@@ -368,5 +374,13 @@
                 width: 70px;
                 height: 70px;
                 font-size: 1.8rem;
+            }
+
+            .reveal-detail {
+                gap: 10px;
+            }
+
+            .reveal-detail span {
+                font-size: 13px;
             }
         }
