@@ -376,6 +376,11 @@
                 font-size: 1.8rem;
             }
 
+            .reveal-content p {
+                margin-bottom: 20px;
+                font-size: 15px;
+            }
+
             .reveal-details {
                 display: flex;
                 justify-content: center;
