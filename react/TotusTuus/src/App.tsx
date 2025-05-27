@@ -6,6 +6,7 @@ import Gallery from './components/gallery/gallerry';
 import Header from './components/header/header';
 import Hero from './components/Hero/Hero';
 import Join from './components/join/join';
+// import NewTrip from './components/newTrip/NewTrip';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -42,6 +43,7 @@ function App() {
         <About />
         <Gallery />
         <Join />
+        {/* <NewTrip /> */}
         <Footer />
       </div>
     </>

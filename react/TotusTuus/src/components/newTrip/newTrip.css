@@ -1,0 +1,44 @@
+#newTrip {
+    display: flex;
+    justify-content: center;
+}
+
+.infoTrip {
+    width: 45dvw;
+    text-align: center;
+}
+
+.infoTrip p {
+    margin: 20px;
+}
+
+.title {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    letter-spacing: -0.03em;
+    line-height: 0.9;
+    color: var(--primary-dark);
+}
+
+.titleDate {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    letter-spacing: -0.03em;
+    line-height: 0.9;
+    color: var(--primary);
+}
+
+.imgTrip img {
+    height: 60dvh;
+    border-radius: 30px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.2s ease-in-out;
+    margin: 0 0 0 30px;
+}
+
+.imgTrip img:hover {
+    transform: translateY(-10px);
+}
+
+.imgTrip img:hover::after {
+    opacity: 1;
+    transform: scale(1);
+}

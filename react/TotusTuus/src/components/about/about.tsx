@@ -54,7 +54,7 @@ function About() {
                         </div>
                         
                         <div className="about-image" data-aos="fade-left">
-                            <img data-aos="fade-rig ht" src={imagem1} alt="Grupo de Jovens Totus Tuus" />
+                            <img src={imagem1} alt="Grupo de Jovens Totus Tuus" />
                         </div>
                     </div>
                 </div>
