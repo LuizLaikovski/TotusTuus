@@ -133,7 +133,10 @@ function Hero() {
                 </button>
                 <div className="reveal-content">
                     <h3>Viagem ao Beto Carrero World</h3>
-                    <p>Estamos muito felizes em anunciar nossa próxima aventura: uma viagem incrível ao Beto Carrero World em Outubro de 2025!</p>
+                    {/* <p>Estamos muito felizes em anunciar nossa próxima aventura: uma viagem incrível 
+                    ao Beto Carrero World em Outubro de 2025!</p> */}
+
+                    <p>Infelizmente todas as vagas foram esgotadas, mas segue abaixo a lista de espera para a nossa incrivel viagem!!</p>
                 
                     <div className="reveal-details">
                         <div className="reveal-detail">
@@ -162,7 +165,7 @@ function Hero() {
                         </div>
                     </div>
                 
-                    <a href="https://forms.gle/H9rbmpB7RfDqihBB9" className="btn btn-primary">Quero Participar!</a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSevYOnhCDCRLwnmvdlqrrSkfIFksP2RWlO4x-AAozx5llGgXw/viewform" className="btn btn-primary">Lista de espera!</a>
                 </div>
             </div>
         </>
