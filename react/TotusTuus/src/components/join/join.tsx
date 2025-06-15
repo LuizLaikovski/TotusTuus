@@ -3,6 +3,7 @@ import { faCalendarDays, faClock, faHeart, faLocationDot, faX } from '@fortaweso
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './join.css';
 import imagem2 from './IMG_7238.jpg';
+import imagem3 from './WhatsApp Image 2025-06-15 at 19.49.27.jpeg';
 
 const Join: React.FC = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -115,15 +116,15 @@ const Join: React.FC = () => {
                                 <button 
                                     ref={buttonRef}
                                     id="saibaMaisBtn" 
-                                    className="btn btn-disable" 
+                                    className="btn btn-primary" 
                                     onClick={openModal}
-                                    disabled
+                                    
                                 >
                                     <FontAwesomeIcon icon={faCalendarDays} /> Veja sobre o Próximo encontro...
                                 </button>
                             </div>
                             
-                            <a href="https://chat.whatsapp.com/FQNHOTFcpTh9pGIxXaoQco" className="btn btn-primary btn-contact" style={{marginTop: '30px'}}>Entre em Contato</a>
+                            <a href="https://chat.whatsapp.com/FQNHOTFcpTh9pGIxXaoQco" className="btn btn-secondary btn-contact" style={{marginTop: '30px'}}>Entre em Contato</a>
                         </div>
                         
                         <div className="about-image" data-aos="fade-left">
@@ -143,10 +144,10 @@ const Join: React.FC = () => {
                     
                     <div className="modal-body">
                         <div className="event-image floating">
-                            <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Evento" />
+                            <img src={imagem3} alt="Evento" />
                         </div>
                         
-                        <div className="event-details">
+                        {/* <div className="event-details">
                             <div className="detail-card animate-delay-1">
                                 <div className="detail-icon">
                                     <FontAwesomeIcon icon={faCalendarDays} />
@@ -173,7 +174,7 @@ const Join: React.FC = () => {
                                 <li>Dinâmicas e integração</li>
                             </ul>
                             <p>Venha fazer parte deste momento especial de fé e comunhão!</p>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
