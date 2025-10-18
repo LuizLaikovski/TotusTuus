@@ -88,7 +88,7 @@ function Hero() {
                         <h1>Totus Tuus Marie</h1>
                         <p>Acompanhe a contagem para a nossa grande aventura no Beto Carrero World!</p>
 
-                        <div className="countdown">
+                        {/* <div className="countdown">
                             <div className="countdown-item">
                                 <div className="countdown-number">{days}</div>
                                 <div className="countdown-label">Dias</div>
@@ -105,7 +105,7 @@ function Hero() {
                                 <div className="countdown-number">{seconds}</div>
                                 <div className="countdown-label">Segundos</div>
                             </div>
-                        </div>
+                        </div> */}
 
                         <div className="countdown-buttons">
                             <a href="#about" className="btn btn-primary">Saiba Mais</a>
