@@ -12,7 +12,6 @@ function Hero() {
         
         const colors = ['#f94144', '#f3722c', '#f8961e', '#f9c74f', '#90be6d', '#43aa8b', '#577590'];
         
-        // Limpa confettis anteriores
         confettiContainerRef.current.innerHTML = '';
         
         for (let i = 0; i < 100; i++) {
